@@ -497,10 +497,10 @@ body {
 .modal-checkbox:checked {
     background-image: url(../images/icon-click.svg);
     background-color: var(--primary-brand-color);
-    border-color: transparent;
+    border-color: var(--primary-brand-color);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    
 }
 
 .modal-checkbox:checked~.modal-submit-btn {
