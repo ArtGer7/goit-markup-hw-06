@@ -321,9 +321,9 @@ body {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 
-    padding: 24px;
-    padding-top: 72px;
+    padding: 72px 24px 24px;
     width: 408px;
+    min-height: 576px;
 
     cursor: pointer;
 
@@ -383,7 +383,7 @@ body {
     letter-spacing: 0.02em;
 
     color: var(--headings-color);
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 .modal-form {
@@ -403,7 +403,7 @@ body {
 .modal-form-input-desc {
     display: block;
     font-size: 12px;
-    line-height: 1.33;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--client-icon-color);
     margin-bottom: 4px;
@@ -429,6 +429,7 @@ body {
     padding: 11px 38px;
     font-size: 18px;
     color: var(--main-text-color);
+    transition: outline var(--transition-dur-and-timing);
 }
 
 .modal .modal-comment {
@@ -459,7 +460,8 @@ body {
 }
 
 .modal-input:focus+.modal-form-icons {
-    fill: var(--primary-brand-color);
+    fill: var(--primary-brand-color),
+    border-color var(--transition-dur-and-timing);
 }
 
 .modal-icon-mail {
@@ -488,13 +490,14 @@ body {
 
     cursor: pointer;
 
-    transition: background-color var(--transition-dur-and-timing);
+    transition: border-color var(--transition-dur-and-timing),
+    background-color var(--transition-dur-and-timing);
 }
 
 .modal-checkbox:checked {
-    background-color: #404bbf;
-    border-color: #404bbf;
     background-image: url(../images/icon-click.svg);
+    background-color: var(--primary-brand-color);
+    border-color: var(--primary-brand-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
