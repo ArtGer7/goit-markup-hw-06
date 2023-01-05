@@ -497,7 +497,7 @@ body {
 .modal-checkbox:checked {
     background-image: url(../images/icon-click.svg);
     background-color: var(--primary-brand-color);
-    border-color: var(--primary-brand-color);
+    border-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
